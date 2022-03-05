@@ -1,0 +1,79 @@
+/*link rel="SHORTCUT ICON" href="./images/logo.ico" 无效网站logo*/
+html {
+  height: 100%;
+}
+
+body, ul {
+  margin: 0;
+  list-style: none;
+  font-family: Georgia, Times New Roman, serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-image: url('../images/background.png');
+  background-attachment: fixed;
+  background-size: cover;
+  color: rgb(235, 235, 235);
+  cursor: url('../images/cursor.png'), default;
+  margin-top: 75px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+nav {
+  display: block;
+  width: 56%;
+  min-width: 500px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav li {
+  text-align: center;
+}
+
+nav li::before {
+  content: "|";
+  display: inline;
+  float: left;
+  width: 0;
+  line-height: 3.6em;
+  margin-left: -3px;
+  color: #ffffff;
+}
+
+nav li:first-child::before {
+  display: none;
+}
+
+nav li a {
+  display: block;
+  line-height: 1.75em;
+  padding: 1em .8em;
+  transition: color 0.3s ease-in-out;
+}
+
+nav li a:hover {
+  color: #ffffff;
+}
+
+main {
+  width 100%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  margin: 0 auto;
+  text-align: center;
+}
